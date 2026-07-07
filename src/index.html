@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>404Stats</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#030507" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="404Stats" />
+  <link rel="apple-touch-icon" href="pwa-icon-192.png" />
+  <link rel="stylesheet" href="styles.css?v=minecraft-modern-v1" />
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo"><img src="logo-404.svg" alt="404Stats logo" /></div>
+      <div><h1 id="serverName">404Stats Local</h1><p id="serverPath">/server/local</p></div>
+    </div>
+    <div class="topbar-controls">
+      <div class="server-status" id="serverStatus" title="Local H2 · Internal Webserver">
+        <span class="status-dot"></span><span class="status-label">Local</span>
+      </div>
+      <div class="top-actions"><button class="ghost" id="refreshBtn" title="Refresh page">↻</button><button class="ghost" id="aboutBtn" title="About 404Stats">?</button><span class="alpha-badge" id="versionBadge" title="Alpha software — bugs may occur and features may change without notice.">0.3a</span><a class="pill" href="https://mcstats.404gnf.de" target="_blank" rel="noopener noreferrer">404Stats</a></div>
+    </div>
+  </header>
+  <main class="page" id="app"></main>
+  <div class="toast" id="toast"></div>
+  <script src="app.local.js?v=minecraft-modern-v1"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>

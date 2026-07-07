@@ -1,0 +1,25 @@
+# Build output
+dist/
+node_modules/
+
+# IDE
+.idea/
+*.iml
+*.swp
+*~
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Vite cache
+.vite/

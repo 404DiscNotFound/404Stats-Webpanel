@@ -1,0 +1,12 @@
+{
+  "name": "404Stats",
+  "short_name": "404Stats",
+  "start_url": "/server/local",
+  "display": "standalone",
+  "background_color": "#030507",
+  "theme_color": "#030507",
+  "icons": [
+    { "src": "/pwa-icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/pwa-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

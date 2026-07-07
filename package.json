@@ -1,0 +1,15 @@
+{
+  "name": "404stats-web",
+  "version": "0.3a",
+  "private": true,
+  "type": "module",
+  "description": "404Stats official web template — Minecraft statistics dashboard",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node postbuild.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.0"
+  }
+}
